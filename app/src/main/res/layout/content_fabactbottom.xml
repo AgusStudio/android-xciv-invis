@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/fabTrfLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="205dp"
+        android:layout_marginRight="@dimen/fab_marginRight"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:background="@color/colorGrey"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorRed"
+            app:elevation="0dp"
+            app:fabSize="mini"
+            android:clickable="true"
+            app:srcCompat="@mipmap/ic_transfer" />
 
-</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fabOpnameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="145dp"
+        android:layout_marginRight="@dimen/fab_marginRight"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opname"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:background="@color/colorGrey"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabOpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorFab2"
+            app:fabSize="mini"
+            android:clickable="true"
+            app:srcCompat="@mipmap/ic_opname" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabHomeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="85dp"
+        android:layout_marginRight="@dimen/fab_marginRight"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:background="@color/colorGrey"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorFab1"
+            app:fabSize="mini"
+            android:clickable="true"
+            app:srcCompat="@mipmap/ic_home" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        android:clickable="true"
+        app:srcCompat="@drawable/logo_white" />
+</android.support.design.widget.CoordinatorLayout>
